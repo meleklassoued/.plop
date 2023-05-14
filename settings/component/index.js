@@ -16,7 +16,7 @@ module.exports = {
   actions: [
     {
       index: "add",
-      path: "../src/components/{{componentType}}/{{pasacalCase name}}.js",
+      path: "../src/components/{{componentType}}/{{pascalCase name}}.js",
       templateFile: "templates/component/index.js.hbs",
     },
   ],
