@@ -1,46 +1,44 @@
 /* -------------------------------------------------------------------------- */
-/*                                dependencies                                */
+/*                                Dependencies                                */
 /* -------------------------------------------------------------------------- */
-// packages
- import react,{useState} from 'React';
-// Local UI components 
+// Packages
+import React, { useState } from 'react';
+// UI Components 
 
-// lib UI components 
+// UI lib components (antD)
 
-// utils & hooks 
+// Custom Hooks & Utils
 
-// Redux methods
+// Redux Funcs
 
-// Gql Queries & mutations 
+// Style (not required) use Boostrap
 
-// style no-required 
+/* -------------------------------------------------------------------------- */
+/*                            {{componentType}} Component                      */
+/* -------------------------------------------------------------------------- */
 
- /* -------------------------------------------------------------------------- */
- /*                         {{componentType}}-component                        */
- /* -------------------------------------------------------------------------- */
+const {{pascalCase name}} = () => {
+  /* ---------------------------------- Hooks --------------------------------- */
+  const [counter, setCounter] = useState(1);
 
-const {{pascalCase name}}=()=> { 
- /* **************************** Vars & Consts **************************** */
- const foo = 1;
- /* ********************************** Hooks ********************************* */
+  /* -------------------------------- Callbacks ------------------------------- */
+  const handleChange = (e) => {
+    e.preventDefault();
+    // Do something...
+  };
 
- // useState
-const [counter,setCounter] = useState(1)
-/* ***************************** events-callback **************************** */
+  const incrementCounter = () => {
+    setCounter((count) => count + 1);
+  };
 
-const handleChange =(e)=> {
- e.preventDefault
- // some logic ... 
-}
-const Increament =()=> { 
-setCounter(count=>count+1)
-}
-/* ******************************** Rendering ******************************* */
-
- return (
-  <div>
-  <h1>{name}</h1>
- </div>);
-}
+  /* --------------------------------- Rendering ------------------------------ */
+  return (
+    <div>
+      <h1>{{pascalCase name}}</h1>
+      <p>Counter: {counter}</p>
+      <button onClick={incrementCounter}>Increment</button>
+    </div>
+  );
+};
 
 export default {{pascalCase name}};
