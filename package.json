@@ -1,6 +1,6 @@
 {
   "name": "react-plop-gen-component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is a [Yeoman generator](https://yeoman.io/) that creates a new React component file for your application. The generator prompts the user for the component type and name and generates a component file with a template.",
   "main": "plopfile.js",
   "scripts": {
@@ -18,7 +18,8 @@
     "url": "https://github.com/meleklassoued/react-gen-component/issues"
   },
   "homepage": "https://github.com/meleklassoued/react-gen-component#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "plop": "^3.1.2"
   }
 }

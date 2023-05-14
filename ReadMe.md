@@ -2,17 +2,35 @@
 
 This is a [Yeoman generator](https://yeoman.io/) that creates a new React component file for your application. The generator prompts the user for the component type and name and generates a component file with a template.
 
-## Getting Started
+## Getting Started (contributing)
 
 To get started with this project, you will need to have Node.js and NPM installed on your computer.
 
 1. Clone this repository to your local machine
-2. Run `npm install` to install the required dependencies
-3. Run `npm run plop` to start the Plop CLI and create a new component file
+2. Run `yarn` to install the required dependencies
+3. Run `yarn generate` to start the Plop CLI and create a new component file
 
-## How to Use
+## Usage & installation
 
-When you run the `npm run plop` command, you will be prompted to choose a component type and name. Once you have provided this information, the generator will create a new component file in the `src/components` directory.
+### To install this package, run the following command:
+
+```sh
+yarn add react-plop-gen-component
+```
+
+### To use the generator, add the following command to your package.json file:
+
+```sh
+"generate": "yarn plop --plopfile ./node_modules/react-plop-gen-component/plopfile.js"
+```
+
+### To generate a new component, run the following command:
+
+```sh
+yarn generate
+```
+
+When you run the yarn generate command, you will be prompted to choose a component type and name. Once you have provided this information, the generator will create a new component file in the src/components directory.
 
 ### Available Component Types
 
