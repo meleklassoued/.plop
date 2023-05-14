@@ -38,6 +38,57 @@ When you run the yarn generate command, you will be prompted to choose a compone
 - Common
 - Layout
 
+# Example Component
+
+Here's an example component created with this generator:
+
+```js
+/* -------------------------------------------------------------------------- */
+/*                                Dependencies                                */
+/* -------------------------------------------------------------------------- */
+// Packages
+import React, { useState } from "react";
+// UI Components
+
+// UI lib components (antD)
+
+// Custom Hooks & Utils
+
+// Redux Funcs
+
+// Style (not required) use Boostrap
+
+/* -------------------------------------------------------------------------- */
+/*                            Common Component                      */
+/* -------------------------------------------------------------------------- */
+
+const TestComponent = () => {
+  /* ---------------------------------- Hooks --------------------------------- */
+  const [counter, setCounter] = useState(1);
+
+  /* -------------------------------- Callbacks ------------------------------- */
+  const handleChange = (e) => {
+    e.preventDefault();
+    // Do something...
+  };
+
+  const incrementCounter = () => {
+    setCounter((count) => count + 1);
+  };
+
+  /* --------------------------------- Rendering ------------------------------ */
+  return (
+    <div>
+      <h1>TestComponent</h1>
+      <p>Counter: {counter}</p>
+      <button onClick={incrementCounter}>Increment</button>
+    </div>
+  );
+};
+
+export default TestComponent;
+```
+
 # About the Author
 
 This generator was created by Melek Lassoued, an experienced JavaScript developer.You can find more of my projects on my [GitHub Account](https://github.com/meleklassoued).
